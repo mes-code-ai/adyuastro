@@ -213,23 +213,6 @@ const AVAILABILITY_DATA = {
       }
     },
     {
-      "name": "Muhammed Emin Özsöy",
-      "role": "Üye İşleri",
-      "availability": {
-        "09.00–10.00": [],
-        "10.00–11.00": [
-          "Perşembe"
-        ],
-        "11.00–12.00": [],
-        "13.00–14.00": [
-          "Salı"
-        ],
-        "14.00–15.00": [],
-        "15.00–16.00": [],
-        "16.00–17.00": []
-      }
-    },
-    {
       "name": "Seher Görmez",
       "role": "Başkan Yardımcısı",
       "availability": {
@@ -240,6 +223,41 @@ const AVAILABILITY_DATA = {
         "14.00–15.00": [],
         "15.00–16.00": [],
         "16.00–17.00": [
+          "Cuma"
+        ]
+      }
+    },
+    {
+      "name": "Beyzanur Doğan",
+      "role": "Organizasyon",
+      "availability": {
+        "09.00–10.00": [],
+        "10.00–11.00": [
+          "Pazartesi",
+          "Perşembe"
+        ],
+        "11.00–12.00": [
+          "Pazartesi",
+          "Perşembe"
+        ],
+        "13.00–14.00": [
+          "Perşembe",
+          "Cuma"
+        ],
+        "14.00–15.00": [
+          "Perşembe",
+          "Cuma"
+        ],
+        "15.00–16.00": [
+          "Pazartesi",
+          "Salı",
+          "Perşembe",
+          "Cuma"
+        ],
+        "16.00–17.00": [
+          "Pazartesi",
+          "Salı",
+          "Perşembe",
           "Cuma"
         ]
       }
