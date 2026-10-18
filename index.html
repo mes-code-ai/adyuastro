@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adıyaman Üniversitesi Astrofizik ve Gözlem Topluluğu üyelerinin müsaitlik bilgileri">
+  <title>Astro | Müsaitlik Planlayıcı</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Astro ana sayfa">
+      <img class="brand-mark" src="Main_LOGO (1).png">
+      <span><strong>ADYU ASTRO</strong><small>Astrofizik ve Gözlem Topluluğu</small></span>
+    </a>
+    <span class="topbar-note">Toplantı planlama aracı</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div><span></span> TOPLULUK İÇİ PLANLAMA</div>
+      <div class="hero-stats">
+        <div><strong id="member-count"></strong></div>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <article class="panel member-panel">
+        <div class="panel-heading">
+          <div class="step">01</div>
+          <div><h2>Üyeye göre ara</h2><p>Bir kişinin müsaitlik takvimini görüntüle.</p></div>
+        </div>
+        <label for="member-select">Topluluk üyesi</label>
+        <select id="member-select"><option value="">Üye seçin</option></select>
+        <div id="member-result" class="result-box empty-state">
+          <span class="empty-icon">⌕</span>
+          <strong>Bir üye seçin</strong>
+          <p>Seçtiğiniz kişinin müsait gün ve saatleri burada listelenecek.</p>
+        </div>
+      </article>
+
+      <article class="panel search-panel">
+        <div class="panel-heading">
+          <div class="step">02</div>
+          <div><h2>Zamana göre ara</h2><p>Belirli bir saatte müsait olan üyeleri bul.</p></div>
+        </div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="day-select">Gün</label>
+            <select id="day-select"><option value="">Gün seçin</option></select>
+          </div>
+          <div class="field">
+            <label for="time-select">Saat aralığı</label>
+            <select id="time-select"><option value="">Saat seçin</option></select>
+          </div>
+        </div>
+        <div id="time-result" class="result-box empty-state">
+          <span class="empty-icon">◷</span>
+          <strong>Gün ve saat seçin</strong>
+          <p>Bu zaman aralığında müsait olan üyeler görüntülenecek.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="quick-view panel">
+      <div class="quick-header">
+        <div><span class="section-kicker">HAFTALIK GÖRÜNÜM</span><h2>Hızlı müsaitlik tablosu</h2><p>Bir hücreye tıklayarak o gün ve saatte kimlerin müsait olduğunu gör.</p></div>
+        <div class="legend"><span></span> Müsait üye var</div>
+      </div>
+      <div class="table-wrap">
+        <table id="availability-table">
+          <thead><tr><th>Gün / Saat</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <footer><span>ADYU Astro · Müsaitlik Planlayıcı</span><span>Bilgiler yüklenen Excel yanıtlarından oluşturulmuştur.</span></footer>
+  </main>
+</body>
+</html>
